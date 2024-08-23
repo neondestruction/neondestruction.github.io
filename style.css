@@ -61,7 +61,17 @@ nav ul li a:hover {
     text-align: center;
     border-radius: 8px;
     transition: transform 0.3s ease;
+    overflow: hidden; /* Evita que el contenido desborde la tarjeta */
 }
+
+.card img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área disponible */
+    border-radius: 8px; /* Mantiene los bordes redondeados de la imagen */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
 
 .card:hover {
     transform: scale(1.05);
