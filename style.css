@@ -77,3 +77,15 @@ nav ul li a:hover {
     transform: scale(1.05);
     border-color: #ff4081;
 }
+
+.mapa-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+#mapa h2 {
+    text-align: center;
+    color: #ff4081;
+    margin-bottom: 20px;
+}
