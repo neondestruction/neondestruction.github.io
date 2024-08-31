@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #000000;
@@ -47,6 +47,20 @@ nav ul li a:hover {
     width: 500px;
 }
 
+.titles {
+    font-family: "Orbitron", sans-serif;
+    font-size: xx-large;
+    color: #ff4081;
+    text-align: center;
+}
+
+.text {
+    font-family: "Oswald", sans-serif;
+    font-size: xx-large;
+    color: #fff;
+    text-align: left;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -84,7 +98,9 @@ nav ul li a:hover {
     margin: 50px 0;
 }
 
-#mapa h2 {
+#mapa h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: xx-large;
     text-align: center;
     color: #ff4081;
     margin-bottom: 20px;
