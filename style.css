@@ -34,6 +34,20 @@ nav ul li a:hover {
     color: #ff4081;
 }
 
+.main-logo-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.main-logo-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 .logo-container {
     display: flex;
     justify-content: center;
@@ -52,6 +66,15 @@ nav ul li a:hover {
     font-size: xx-large;
     color: #ff4081;
     text-align: center;
+
+    /* Sombra para el texto */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), /* sombra negra tenue */
+                 0px 0px 15px #ff4081; /* brillo rosado */
+
+    /* Brillo alrededor del texto */
+    box-shadow: 0 0 20px #ff4081, /* brillo rosado */
+                0 0 30px #ff4081, /* brillo rosado más extendido */
+                0 0 40px #ff4081; /* brillo rosado más difuso */
 }
 
 .text {
@@ -61,9 +84,13 @@ nav ul li a:hover {
     text-align: left;
 }
 
+.cta-button {
+    color: rgba(231, 11, 11, 0.906);
+}
+
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas por defecto */
     gap: 20px;
     padding: 0 50px;
 }
@@ -86,10 +113,27 @@ nav ul li a:hover {
     margin-bottom: 10px; /* Espacio entre la imagen y el texto */
 }
 
-
 .card:hover {
     transform: scale(1.05);
     border-color: #ff4081;
+}
+
+/* Media Queries para diferentes tamaños de pantalla */
+
+/* Para pantallas medianas, como tabletas */
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas medianas */
+        padding: 0 30px;
+    }
+}
+
+/* Para pantallas pequeñas, como teléfonos móviles */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+        padding: 0 20px;
+    }
 }
 
 .mapa-container {
