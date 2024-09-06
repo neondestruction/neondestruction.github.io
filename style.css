@@ -72,8 +72,8 @@ nav ul li a:hover {
                  0px 0px 15px #ff4081; /* brillo rosado */
 
     /* Brillo alrededor del texto */
-    box-shadow: 0 0 20px #ff4081, /* brillo rosado */
-                0 0 30px #ff4081, /* brillo rosado más extendido */
+    box-shadow: 0 0 20px #dcc7ce, /* brillo rosado */
+                0 0 30px #8d5a6b, /* brillo rosado más extendido */
                 0 0 40px #ff4081; /* brillo rosado más difuso */
 }
 
